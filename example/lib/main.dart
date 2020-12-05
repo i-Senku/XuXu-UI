@@ -12,15 +12,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(),
-        body: Container(
-          height: 100,
-          width: 100,
-          color: Colors.red,
-          child: Container(
-            height: 100,
-            width: 100,
-            color: Colors.yellow,
-          ).paddingAll(),
-        ).center());
+        body: XuBox().size().color(Colors.red).create().center());
   }
 }
