@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(),
-        body: XuBox().size().color(Colors.red).create().center());
+        appBar: AppBar(), body: XuText("asdad").color(Colors.red).create().center());
   }
+
 }
