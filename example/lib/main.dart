@@ -12,6 +12,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(),
-        body: XuBox().size().color(Colors.red).create().center());
+        body: XuText("asdad").color(Colors.red).create().center());
   }
+
+  final text = XuText("asdasd")
+      .color(Colors.red)
+      .fontSize(14)
+      .create()
+      .paddingAll()
+      .center();
 }
