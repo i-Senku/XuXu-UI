@@ -11,7 +11,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(), body: XuText("asdad").color(Colors.red).create().center());
+        appBar: AppBar(),
+        body: XuText("asdad").color(Colors.red).create().center());
   }
 
+  final text = XuText("asdasd")
+      .color(Colors.red)
+      .fontSize(14)
+      .create()
+      .paddingAll()
+      .center();
 }
