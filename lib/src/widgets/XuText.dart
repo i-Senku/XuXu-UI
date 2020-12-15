@@ -1,8 +1,8 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:xuxu_ui/src/builder/builder.dart';
 
-import 'builder.dart';
 
 class XuText extends XuBuilder<Widget> {
   final String _text;

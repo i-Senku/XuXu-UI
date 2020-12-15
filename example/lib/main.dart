@@ -16,7 +16,8 @@ class MyApp extends StatelessWidget {
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            XuBox(child: Text("Ercan").paddingOnly(top: 20)).setColor(Colors.red)
+            XuBox(child: Text("Ercan").paddingOnly(top: 20))
+                .setColor(Colors.red)
                 .create()
                 .center(),
             SizedBox(
@@ -25,14 +26,12 @@ class MyApp extends StatelessWidget {
             VxBox(child: Text("Ercan").pOnly(top: 20))
                 .withDecoration(
                   BoxDecoration(
-                    color: Colors.red,
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(8),
-                    ),
-                    gradient: LinearGradient(
-                      colors: [Colors.red, Colors.blue]
-                    )
-                  ),
+                      color: Colors.red,
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(8),
+                      ),
+                      gradient:
+                          LinearGradient(colors: [Colors.red, Colors.blue])),
                 )
                 .make()
                 .centered()
