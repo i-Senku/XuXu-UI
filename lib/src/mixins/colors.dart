@@ -3,12 +3,12 @@ import 'package:flutter/widgets.dart';
 mixin ColorsMix<T>{
   
   @protected
-  Color color;
+  Color clr;
 
   T widget;
 
-  T setColor(Color color) {
-    this.color = color;
+  T color(Color color) {
+    this.clr = color;
     return widget;
   }
 
