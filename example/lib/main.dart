@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:xuxu_ui/xuxu_ui.dart';
 
@@ -21,16 +19,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: XuBox(
-        child: XuHStack(
-          [
-            XuText("Ercan").create(),
-            XuText("Ahmet").create(),
-            XuText("Deneme Text").create().unique(),
-            XuText("asLKDJSADJKLSAd").create()
-          ],
-        ).space(40).backgroundColor(Colors.yellow).create(),
-      ).create().center(),
+      body:Container()
     );
   }
 }
