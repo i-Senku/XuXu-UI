@@ -49,6 +49,6 @@ class XuHStack extends XuBuilder<Widget> {
 
   XuHStack space(double space) => this.._space = space;
 
-  XuHStack backgroundColor(Color color) => this.._background = color;
+  XuHStack bgColor(Color color) => this.._background = color;
 
 }
