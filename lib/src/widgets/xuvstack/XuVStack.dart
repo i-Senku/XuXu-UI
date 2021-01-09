@@ -49,7 +49,7 @@ class XuVStack extends XuBuilder<Widget> {
 
   XuVStack space(double space) => this.._space = space;
 
-  XuVStack backgroundColor(Color color) => this.._background = color;
+  XuVStack bgColor(Color color) => this.._background = color;
 
 
 }

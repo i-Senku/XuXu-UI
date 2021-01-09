@@ -18,14 +18,20 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      body: XuListBuilder(
-        itemBuilder: (context, index) => XuText("Ercan")
-            .color(Colors.red)
-            .fontWeight(FontWeight.bold)
-            .create()
-            .paddingAll(8),
-      ).count(5).create(),
-    );
+        appBar: AppBar(),
+        body: XuVStack([
+        XuText("Ercan").fontSize(36).create().unique(),
+        XuText("Ercan").fontSize(36).create(),
+        XuText("Ercan").fontSize(36).create(),
+      ]).space(15).crossAxis(CrossAxisAlignment.center).bgColor(Colors.red).create()
+      );
   }
 }
+
+/*
+XuVStack([
+        XuText("Ercan").create().unique(),
+        XuText("Ercan").create(),
+        XuText("Ercan").create(),
+        XuText("Ercan").create(),
+      ]).space(15).crossAxis(CrossAxisAlignment.center).backgroundColor(Colors.red).create()*/
