@@ -19,7 +19,13 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body:Container()
+      body: XuListBuilder(
+        itemBuilder: (context, index) => XuText("Ercan")
+            .color(Colors.red)
+            .fontWeight(FontWeight.bold)
+            .create()
+            .paddingAll(8),
+      ).count(5).create(),
     );
   }
 }

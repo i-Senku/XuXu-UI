@@ -13,6 +13,7 @@ export 'src/widgets/xuhstack/XuHStack.dart';
 export 'src/widgets/xuvstack/XuVStack.dart';
 export 'package:xuxu_ui/src/extensions/unique.dart';
 export 'src/widgets/xuhstack/XuHStack.dart';
+export 'src/widgets/xulistview/XuListView_builder.dart';
 
 class Calculator {
   /// Returns [value] plus 1.
