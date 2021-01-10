@@ -21,7 +21,7 @@ class _MyAppState extends State<MyApp> {
       appBar: AppBar(),
       body: XuVStack([
 
-        XuBox(child: XuText("$number").create()).size(height: 100,width: 100).color(Colors.blue).create().onTap(() {
+        XuBox(child: XuText("$number").create()).size(height: 100,width: 100).decoration(XuBoxDecoration().color(Colors.red)).create().onTap(() {
           number = 50;
         },state: this), // Auto update state
         XuBox(child: XuText("$number").create()).size(height: 100,width: 100).color(Colors.blue).create().onDoubleTap(() {
@@ -30,7 +30,7 @@ class _MyAppState extends State<MyApp> {
         XuBox(child: XuText("$number").create()).size(height: 100,width: 100).color(Colors.blue).create().onLongPress(() {
           number = 50;
         }),
-        
+
       ]).space(20).create()
     );
   }
