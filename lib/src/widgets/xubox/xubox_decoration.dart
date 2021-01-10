@@ -33,4 +33,8 @@ class XuBoxDecoration extends XuDecorationBuilder<BoxDecoration> {
           AlignmentGeometry begin = Alignment.centerLeft,
           AlignmentGeometry end = Alignment.centerRight}) =>
       this.._linearGradient = LinearGradient(begin: begin,end: end,colors: colors);
+
+      
+
+
 }

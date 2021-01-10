@@ -20,18 +20,11 @@ class _MyAppState extends State<MyApp> {
     return Scaffold(
         appBar: AppBar(),
         body: XuVStack([
-        XuText("Ercan").fontSize(36).create().unique(),
-        XuText("Ercan").fontSize(36).create(),
-        XuText("Ercan").fontSize(36).create(),
-      ]).space(15).crossAxis(CrossAxisAlignment.center).bgColor(Colors.red).create()
-      );
+          XuBox()
+              .decoration(XuBoxDecoration().radiusAll().color(Colors.red))
+              .marginOnly(left: 10, top: 20)
+              .size(height: 300, width: 300)
+              .create()
+        ]).crossAxis(CrossAxisAlignment.center).create());
   }
 }
-
-/*
-XuVStack([
-        XuText("Ercan").create().unique(),
-        XuText("Ercan").create(),
-        XuText("Ercan").create(),
-        XuText("Ercan").create(),
-      ]).space(15).crossAxis(CrossAxisAlignment.center).backgroundColor(Colors.red).create()*/

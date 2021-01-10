@@ -3,7 +3,7 @@ import 'package:flutter/widgets.dart';
 mixin ColorsMix<T>{
   
   @protected
-  Color clr;
+  Color clr = null;
 
   T widget;
 
