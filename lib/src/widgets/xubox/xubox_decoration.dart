@@ -5,11 +5,24 @@ class XuBoxDecoration extends XuDecorationBuilder<BoxDecoration> {
   Color _color;
   BorderRadius _borderRadius;
   LinearGradient _linearGradient;
+  BoxShape _shape = BoxShape.rectangle;
+  BlendMode _backgroundBlendMode;
+  BoxBorder _border;
+  List<BoxShadow> _boxShadow;
+  DecorationImage _image;
 
   @override
   BoxDecoration create() {
     return BoxDecoration(
-        color: _color, borderRadius: _borderRadius, gradient: _linearGradient);
+        color: _color,
+        borderRadius: _borderRadius,
+        gradient: _linearGradient,
+        shape: _shape,
+        backgroundBlendMode: _backgroundBlendMode,
+        border: _border,
+        boxShadow: _boxShadow,
+        image: _image
+        );
   }
 
   XuBoxDecoration color(Color color) => this.._color = color;
@@ -34,7 +47,10 @@ class XuBoxDecoration extends XuDecorationBuilder<BoxDecoration> {
           AlignmentGeometry end = Alignment.centerRight}) =>
       this.._linearGradient = LinearGradient(begin: begin,end: end,colors: colors);
 
-      
-
+  XuBoxDecoration shape(BoxShape shape) => this.._shape = shape;
+  XuBoxDecoration backgroundBlendMode(BlendMode blendMode) => this.._backgroundBlendMode = blendMode;
+  XuBoxDecoration border(BoxBorder border) => this.._border = border;
+  XuBoxDecoration boxShadow(List<BoxShadow> boxShadow) => this.._boxShadow = boxShadow;
+  XuBoxDecoration image(DecorationImage image) => this.._image = image;
 
 }

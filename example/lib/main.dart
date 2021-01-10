@@ -20,11 +20,8 @@ class _MyAppState extends State<MyApp> {
     return Scaffold(
         appBar: AppBar(),
         body: XuVStack([
-          XuBox()
-              .decoration(XuBoxDecoration().radiusAll().color(Colors.red))
-              .marginOnly(left: 10, top: 20)
-              .size(height: 300, width: 300)
-              .create()
+          XuBox().decoration(XuBoxDecoration().color(Colors.red).shape(BoxShape.circle))
+              .marginOnly(left: 10, top: 20).size(height: 300, width: 300).create()
         ]).crossAxis(CrossAxisAlignment.center).create());
   }
 }
