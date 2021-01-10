@@ -36,42 +36,64 @@ class XuHStack extends XuBuilder<Widget> {
   }
 
   ///
-  /// How the children should be placed along the main axis in a flex layout.
+  /// Set MainAxisAlignment 
+  /// 
+  /// default [MainAxisAlignment.start]
   ///
   XuHStack mainAxis(MainAxisAlignment mainAlignment) => this.._mainAxisAlignment = mainAlignment;
 
   ///
-  /// How the children should be placed along the cross axis in a flex layout.
+  /// Set CrossAxisAlignment
+  /// 
+  /// default [CrossAxisAlignment.center]
   ///
   XuHStack crossAxis(CrossAxisAlignment crossAlignment) => this.._crossAxisAlignment = crossAlignment;
 
   ///
-  /// How much space should be occupied in the main axis. During a flex layout, available space along the main axis is allocated to children. After allocating space, there might be some remaining free space. This value controls whether to maximize or minimize the amount of free space, subject to the incoming layout constraints.
+  ///Set MainAxisSize
+  ///
+  ///default [MainAxisSize.max]
   ///
   XuHStack size(MainAxisSize mainSize) => this.._mainAxisSize = mainSize;
   
   ///
-  ///A direction in which boxes flow vertically.
+  ///Set VerticalDirection
+  ///
+  ///default [VerticalDirection.down]
   ///
   XuHStack direction(VerticalDirection vdirection) => this.._verticalDirection = vdirection;
 
   ///
-  ///A direction in which text flows.Some languages are written from the left to the right (for example, English, Tamil, or Chinese), while others are written from the right to the left (for example Aramaic, Hebrew, or Urdu). Some are also written in a mixture, for example Arabic is mostly written right-to-left, with numerals written left-to-right.
-  ///
+  /// Set TextDirection.
+  /// 
   XuHStack textDirection(TextDirection textDirection) => this.._textDirection = textDirection;
 
   ///
-  ///A horizontal line used for aligning text
+  /// Set TextBaseline
+  ///
+  /// A horizontal line used for aligning text.
   ///
   XuHStack baseLine(TextBaseline line) => this.._textBaseline = line;
 
   ///
-  /// Creates space between widgets between main alignment
+  /// a vertical space for widgets. default [space  = 0.0]
+  /// 
+  /// if you don't want widgets to be affected by this. Use unique() method
+  /// 
+  /// Example
+  /// 
+  /// Widget.unique()
   ///
   XuHStack space(double space) => this.._space = space;
 
   ///
-  /// Assigns a background color for each widget created.
+  /// a background color for widgets
+  /// 
+  /// if you don't want widgets to be affected by this. Use unique() method
+  /// 
+  /// Example
+  /// 
+  /// Widget.unique()
   ///
   XuHStack bgColor(Color color) => this.._background = color;
 

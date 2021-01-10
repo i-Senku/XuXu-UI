@@ -22,7 +22,7 @@ class XuBox extends XuBuilder<Widget> with ColorsMix<XuBox>{
   }
 
   ///
-  ///Created a widget
+  ///Creat a widget
   ///
   @override
   Widget create({Key key}) {
