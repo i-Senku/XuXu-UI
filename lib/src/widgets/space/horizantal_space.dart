@@ -1,5 +1,14 @@
 import 'package:flutter/material.dart';
 
+///
+/// A horizontal SizedBox
+/// 
+/// Example
+/// 
+/// ```dart
+/// SpaceH(8.0)
+/// ```
+///
 class SpaceH extends StatelessWidget {
   final double width;
 
