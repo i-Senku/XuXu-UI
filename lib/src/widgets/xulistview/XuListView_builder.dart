@@ -49,7 +49,10 @@ class XuListBuilder extends XuBuilder<Widget> {
       dragStartBehavior: _dragStartBehavior,
     );
   }
-
+  
+  ///
+  /// Set item count
+  ///
   XuListBuilder count(int count) => this.._itemCount = count;
   XuListBuilder wrap(bool shrinWrap) => this.._shrinkWrap = shrinWrap;
   XuListBuilder cacheExtent(double cache) => this.._cacheExtent = cache;
