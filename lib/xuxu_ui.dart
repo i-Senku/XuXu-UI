@@ -1,6 +1,5 @@
 library xuxu_ui;
 
-
 export 'src/extensions/center.dart';
 export 'src/extensions/padding.dart';
 export 'package:xuxu_ui/src/widgets/xutext/XuText.dart';

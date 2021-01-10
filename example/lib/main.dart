@@ -19,9 +19,23 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(),
-        body: XuVStack([
-          XuBox().decoration(XuBoxDecoration().color(Colors.red).shape(BoxShape.circle))
-              .marginOnly(left: 10, top: 20).size(height: 300, width: 300).create()
-        ]).crossAxis(CrossAxisAlignment.center).create());
+        body: Container(
+          child: XuVStack([
+            XuBox(
+            child: XuText("Demo")
+                        .fontSize(36)
+                        .color(Colors.white)
+                        .create()
+                        .center()
+                        .paddingAll(all: 8)).marginAll()
+                .decoration(XuBoxDecoration().color(Colors.red).radiusAll(radius: 36))
+                .create()
+                .unique()
+          ])
+              .space(20)
+              .bgColor(Colors.green)
+              .crossAxis(CrossAxisAlignment.start)
+              .create(),
+        ));
   }
 }

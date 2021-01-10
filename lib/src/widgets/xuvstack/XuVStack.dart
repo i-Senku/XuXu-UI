@@ -1,7 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:xuxu_ui/src/builder/builder.dart';
 import 'package:xuxu_ui/src/extensions/padding.dart';
-import 'package:xuxu_ui/src/widgets/xubox/xubox.dart';
 import 'package:xuxu_ui/xuxu_ui.dart';
 
 class XuVStack extends XuBuilder<Widget> {
@@ -28,7 +27,7 @@ class XuVStack extends XuBuilder<Widget> {
 
   @override
   Widget create({Key key}) {
-    this._children = this._children.map((e) => e.key == null ? XuBox(child: e).color(_background).create().paddingOnly(bottom: _space) : e).toList();
+    this._children = this._children.map((e) => e.key == null ? Container(child: e,color: _background,).paddingOnly(bottom: _space) : e).toList();
     return Column(
       key: key,
       mainAxisAlignment: _mainAxisAlignment,
