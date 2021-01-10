@@ -21,12 +21,16 @@ class _MyAppState extends State<MyApp> {
       appBar: AppBar(),
       body: XuVStack([
 
-        XuBox().size(height: 100,width: 100).create().paddingAll(),
-        XuBox().size(height: 100,width: 100).create().paddingOnly(left: 20,right: 20),
-        XuBox().size(height: 100,width: 100).create().flexible(),
-        XuBox().size(height: 100,width: 100).create().expanded(),
-        XuBox().size(height: 100,width: 100).create().center(),
-
+        XuBox(child: XuText("$number").create()).size(height: 100,width: 100).color(Colors.blue).create().onTap(() {
+          number = 50;
+        },state: this), // Auto update state
+        XuBox(child: XuText("$number").create()).size(height: 100,width: 100).color(Colors.blue).create().onDoubleTap(() {
+          number = 100;
+        }),
+        XuBox(child: XuText("$number").create()).size(height: 100,width: 100).color(Colors.blue).create().onLongPress(() {
+          number = 50;
+        }),
+        
       ]).space(20).create()
     );
   }

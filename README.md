@@ -105,7 +105,7 @@ Extensions | Description
 --- | ---
 expanded() | `Expanded` Widget
 flexible() |`Flexible` Widget
-center() | `Expanded` Widget
+center() | `Center` Widget
 paddingAll() | `EdgeInsets.all` Widget
 paddingOnly() | `EdgeInsets.only` Widget
 unique() | It's important for `XuHStack` and `HuVStack`
