@@ -13,29 +13,21 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  int sayi = 10;
+  int number = 10;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(),
-        body: Container(
-          child: XuVStack([
-            XuBox(
-            child: XuText("Demo")
-                        .fontSize(36)
-                        .color(Colors.white)
-                        .create()
-                        .center()
-                        .paddingAll(all: 8)).marginAll()
-                .decoration(XuBoxDecoration().color(Colors.red).radiusAll(radius: 36))
-                .create()
-                .unique()
-          ])
-              .space(20)
-              .bgColor(Colors.green)
-              .crossAxis(CrossAxisAlignment.start)
-              .create(),
-        ));
+      appBar: AppBar(),
+      body: XuVStack([
+
+        XuBox().size(height: 100,width: 100).create().paddingAll(),
+        XuBox().size(height: 100,width: 100).create().paddingOnly(left: 20,right: 20),
+        XuBox().size(height: 100,width: 100).create().flexible(),
+        XuBox().size(height: 100,width: 100).create().expanded(),
+        XuBox().size(height: 100,width: 100).create().center(),
+
+      ]).space(20).create()
+    );
   }
 }

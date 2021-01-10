@@ -1,8 +1,8 @@
 name: xuxu_ui
-description: A new Flutter package.
+description: XuXu UI Design Flutter framework that makes development time shorter and useful package.
 version: 0.0.1
-author:
-homepage:
+repository: https://github.com/i-Senku/XuXu-UI
+
 
 environment:
   sdk: ">=2.7.0 <3.0.0"

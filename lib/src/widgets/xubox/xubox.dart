@@ -37,7 +37,7 @@ class XuBox extends XuBuilder<Widget> with ColorsMix<XuBox>{
       margin: _margin,
       padding: _padding,
       constraints: _constraints,
-      decoration: _boxDecoration.create() ,
+      decoration: this.clr == null ?  _boxDecoration.create() : null,
     );
   }
 
