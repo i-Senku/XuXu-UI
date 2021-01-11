@@ -7,7 +7,7 @@
 Add it to your `pubspec.yaml` file:
 ```yaml
 dependencies:
-  xuxu_ui: ^0.0.2
+  xuxu_ui: ^0.0.3
 ```
 Install packages from the command line
 ```
@@ -19,10 +19,16 @@ If you like this package, consider supporting it by giving it a star on [GitHub]
 
 ![](assets/basic.png)
 
+# Flutter vs XuXu UI
+![](assets/xuxu_ui.png)
+![](assets/flutter.png)
+
 # Important Keywords And Usage Rules
 * All Widgets start with **Xu**
 * To declare that the widget created with XuXu UI is a widget, the **create()** function should work.
 * The **create()** function should always be called after all operations have finished.
+
+
 
 
 # XuBox - Container
@@ -63,12 +69,16 @@ unique() | It excludes widgets that you do not want to be affected by the `space
 ![](assets/xuhstack.png)
 <img height = 500 width = full src="assets/hstack-phone.png">
 
+# XuZStack - Stack
+![](assets/xuxu_ui.png)
+
+
 
 # XuListBuilder - ListView.builder
 
  Function | Description 
 --- | ---
-count() | Adds space between `all` widgets in `horizontal` alignment
+count() | List item count
 pAll() | Padding All
 pOnly() | Padding Only ( left - right - bottom - top)
 wrap() | shinkWrap
@@ -108,11 +118,13 @@ flexible() |`Flexible` Widget
 center() | `Center` Widget
 paddingAll() | `EdgeInsets.all` Widget
 paddingOnly() | `EdgeInsets.only` Widget
+positioned() | `Positioned` Widget
+positionedFill() | `Positioned.fill()` Widget
 unique() | It's important for `XuHStack` and `HuVStack`
 
 ![](assets/extensions.png)
 
 # Contact
 
-* [Linkedin](https://pub.dev/packages/xuxu_ui)
+* [Linkedin](https://www.linkedin.com/in/ercangarip/)
 * **ercangp34@gmail.com**

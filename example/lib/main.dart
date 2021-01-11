@@ -44,8 +44,11 @@ class _MyAppState extends State<MyApp> {
 
           // With XuXu UI
           XuZStack([
+            
             XuText("Demo 1").fontSize(26).create().positioned(left: 20, top: 20),
+
             XuBox(child: XuText("Demo 2").create().center()).create().positioned()
+
           ]).clip(Clip.none).create(),
 
           // Default Flutter
