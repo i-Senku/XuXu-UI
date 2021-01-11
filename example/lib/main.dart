@@ -31,6 +31,11 @@ class _MyAppState extends State<MyApp> {
           number = 50;
         }),
 
+        // ZSTACK
+        XuZStack([
+          XuText("Demo 1").create()
+        ]).bgColor(Colors.red).create()
+
       ]).space(20).create()
     );
   }

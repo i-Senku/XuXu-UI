@@ -17,5 +17,6 @@ export 'src/widgets/xulistview/XuListView_builder.dart';
 export 'src/widgets/space/horizantal_space.dart';
 export 'src/widgets/space/vertical_space.dart';
 export 'src/extensions/expanded.dart';
+export 'src/widgets/xuzstack/XuZStack.dart';
 
 
